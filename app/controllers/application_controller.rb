@@ -1,3 +1,6 @@
-Rails.application.routes.draw do
-	root 'application#hello'
+class ApplicationController < ActionController::Base
+
+  def hello
+    render html: "hello, world!"
+  end
 end
