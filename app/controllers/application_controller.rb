@@ -1,2 +1,3 @@
-class ApplicationController < ActionController::Base
+Rails.application.routes.draw do
+	root 'application#hello'
 end
